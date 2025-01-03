@@ -1,0 +1,43 @@
+@use "../../../assets/sass/abstracts/colors.scss";
+@use "../../../assets/sass/abstracts/fonts.scss";
+@use "../../../assets/sass/abstracts/text.scss";
+
+.card-home {
+  &__container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    flex: 0 0 345px;
+    border-radius: 20px;
+    box-shadow: 4px 6px 5px -4px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 4px 6px 5px -4px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 4px 6px 5px -4px rgba(0, 0, 0, 0.75);
+  }
+
+  &__top {
+    height: 177px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    background-size: cover;
+    background-position: center;
+  }
+  &__bottom {
+    background-color: burlywood;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    flex-grow: 1;
+  }
+  &__days-on-market {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: colors.$color-orange;
+    color: colors.$color-white;
+    font-size: 12px;
+    width: fit-content;
+    padding: 5px 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+    border-radius: 100px;
+  }
+}

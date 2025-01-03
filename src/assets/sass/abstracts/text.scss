@@ -1,0 +1,22 @@
+@use './colors.scss';
+@use './fonts.scss';
+
+.text-small,.text-medium, .text-placeholder{
+    font-weight: 400;
+}
+
+.text-placeholder,
+.text-medium
+{
+    line-height: 24px;
+}
+.text-placeholder{
+    font-size: 16px;
+}
+.text-medium{
+    font-size: 14px;
+}
+.text-small{
+    font-size: 10px;
+    line-height: 16px;
+}

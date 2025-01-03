@@ -1,0 +1,26 @@
+@use "../sass/abstracts/colors.scss";
+@use "../sass/abstracts/fonts.scss";
+@use "../sass/abstracts/text.scss";
+
+.logo {
+  display: flex;
+  align-items: center;
+
+  & img {
+    height: 80%;
+  }
+
+  &__text {
+    font-family: fonts.$font-logo;
+    display: flex;
+    font-size: 130%;
+    &--left {
+      color: colors.$color-orange;
+      font-weight: 600;
+    }
+    &--right {
+      color: colors.$color-purple-light;
+      font-weight: 300;
+    }
+  }
+}

@@ -1,0 +1,62 @@
+@use "../../../assets/sass/abstracts/colors.scss";
+
+.nearby-homes {
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+  }
+
+  &--top {
+    display: flex;
+    flex-direction: column;
+    &--headline {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    &--text {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      & span {
+        font-size: 14px;
+        font-weight: 400;
+      }
+    }
+
+    &--arrows {
+      display: flex;
+      gap: 16px;
+      &--icon {
+        height: 20px;
+        width: 20px;
+
+        &--border {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          height: 36px;
+          width: 36px;
+          cursor: pointer;
+          border: 1px solid colors.$color-grey-med;
+          border-radius: 100px;
+        }
+      }
+    }
+
+    &--slide {
+      margin-top: 8px;
+      display: flex;
+      gap: 15px;
+      height: 280px;
+      overflow: hidden;
+    }
+
+    &--text {
+      & span {
+        color: colors.$color-black;
+      }
+    }
+  }
+}

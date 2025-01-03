@@ -1,0 +1,44 @@
+@use "../../assets/sass/abstracts/colors.scss";
+
+.search-bar {
+  &__container {
+    display: flex;
+    height: 100%;
+    width: 100%;
+
+    & input {
+      width: 85%;
+      height: 100%;
+      border: 0px solid transparent;
+      outline: transparent;
+      border-top-left-radius: 15px;
+      border-bottom-left-radius: 15px;
+    }
+
+    & input::placeholder {
+      padding-left: 10px;
+      font-size: 14px;
+      text-overflow: ellipsis;
+    }
+
+    & button {
+      background-color: white;
+      height: 100%;
+      width: 15%;
+      outline: transparent;
+      border: transparent;
+      cursor: pointer;
+      border-top-right-radius: 15px;
+      border-bottom-right-radius: 15px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  &__search-icon {
+    height: 24px;
+    width: 24px;
+    fill: colors.$color-orange;
+  }
+}

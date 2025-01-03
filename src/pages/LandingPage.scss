@@ -1,0 +1,17 @@
+.landing-page {
+  &__container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: relative;
+  }
+  &__nearby-homes {
+    &--container {
+      margin: 0 auto;
+      width: 100%;
+      max-width: 1280px;
+      margin-top: 48px;
+      padding: 0px 20px;
+    }
+  }
+}

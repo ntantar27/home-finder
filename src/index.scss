@@ -1,0 +1,51 @@
+@use './assets/sass/abstracts/colors.scss';
+@use './assets/sass/abstracts/fonts.scss';
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: fonts.$font-main;
+  line-height: 1.6;
+  color: colors.$color-black;
+}
+
+h1{
+  font-family: fonts.$font-main;
+  font-weight: 900;
+  color: colors.$color-white;
+}
+h5{
+  font-family: fonts.$font-main;
+  color: colors.$color-black;
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 24px;
+}
+@media (min-width:0px){
+  h1{
+    font-size: 24px;
+    line-height: 30px;
+  }
+}
+@media (min-width:308px){
+  h1{
+    font-size: 36px;
+    line-height: 40px;
+  }
+}
+@media (min-width:481px){
+  h1{
+    font-size: 44px;
+    line-height: 56px;
+  }
+}
+@media (min-width:769px){
+  h1{
+    font-size: 60px;
+    line-height: 72px;
+  }
+}
+
